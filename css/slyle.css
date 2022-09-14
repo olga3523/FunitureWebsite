@@ -1,0 +1,552 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    color:#333333;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+    font-weight:700;    
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+    font-weight: 300;
+}
+
+/*Start Default styles*/
+
+.container { 
+    margin: 0 auto;
+    max-width: 1230px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;   
+}
+
+.btn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+}
+
+a.btn {
+    color: inherit;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn.btn-default {
+    background-color: #054C73;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 25px 72px; 
+    border-radius: 50px;   
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+@media screen and (max-width:424px) {
+    .btn.btn-default{
+        padding:20px 50px ;
+    }
+}
+
+@media screen and (max-width:374px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+/*End Default styles*/
+
+/*Start Section header*/
+
+.section-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-header .logo {
+    font-weight: 700;
+    font-size: 34px;
+    color: #054C73;
+}
+
+.section-header nav a {
+    margin:0 35px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media screen and (max-width:1023px) {
+    .section-header nav a {
+        margin: 0 20px;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .section-header .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .section-header nav a {
+        margin: 5px 5px;
+    }
+
+
+}
+
+@media screen and (max-width:374px) {
+    .section-header .container {
+        padding:15px 0;
+    }
+
+    .section-header nav a {
+            margin: 5px 3px;
+        }
+    
+}
+
+/*End Section header*/
+
+/*Start Section main*/
+
+.section-main {
+    background:url("../img/bg-main.jpg") no-repeat;
+    background-size:cover;
+    padding:150px 0;
+}
+
+.section-main .text-wrapper {
+    padding: 40px;
+    max-width: 645px;
+    width: 100%;
+    background: #DFE9F4;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.section-main .text-wrapper span {
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;        
+}
+
+.section-main .text-wrapper h1 {
+    font-size: 52px;
+    line-height: 65px;
+    color: #054C73;
+    margin: 20px 0;
+}
+
+.section-main .text-wrapper p {
+    font-size: 18px;
+    line-height: 39px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:1023px){
+    .section-main {
+        padding: 60px 0;
+    }
+
+    .section-main .text-wrapper {
+        margin-right: auto;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .section-main .text-wrapper h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .section-main .text-wrapper  {
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .section-main .text-wrapper h1 {
+        font-size: 33px;
+    }
+}
+
+
+/*End Section main*/
+
+
+/*Start Section benefits*/
+
+.section-benefits {
+    background-color:#F2F5FF ;
+    padding: 22px 0;
+}
+
+.section-benefits .container {
+    display: flex;
+    justify-content: space-between;        
+}
+
+.section-benefits .card-benefits {
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.card-benefits .text-wrapper h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 6px;
+}
+
+@media screen and (max-width:1023px){
+    .section-benefits .card-benefits {
+        gap: 5px;
+    }
+
+    .card-benefits .text-wrapper h4 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .section-benefits .card-benefits {
+        flex-direction: column; 
+        text-align: center;
+        max-width: 131px;       
+    }
+}
+
+@media screen and (max-width:424px) {
+    .section-benefits .container{
+        flex-direction: column;
+        gap:25px;    
+    }
+
+    .section-benefits .card-benefits {
+        max-width: 100%;
+    }
+}
+/*End Section benefits*/
+
+/*Start Section inspiration*/
+
+.section-inspiration {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-inspiration .description {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.section-inspiration .img-container {
+    display: flex;
+    justify-content: center; 
+    gap:30px;
+    align-items: flex-end;       
+}
+
+.section-inspiration .img-container .img-wrapper:nth-child(2) {
+    margin-bottom: 40px;   
+}
+
+
+@media screen and (max-width:767px) {
+    .section-inspiration .img-container .img-wrapper:nth-child(2) {
+        margin-bottom: 15px;
+    }
+
+    .section-inspiration .img-container {
+        gap: 10px;
+    }
+
+    .section-inspiration .description {
+        margin-bottom: 50px;
+    }   
+}
+
+/*End Section inspiration*/
+
+/*Start Section beautify*/
+
+.section-beautify {
+    background-color:#F2F5FF;
+}
+
+.section-beautify .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-beautify .text-wrapper {
+    max-width: 512px;       
+}
+
+.section-beautify .text-wrapper .title { 
+    text-align: left;
+}
+
+.section-beautify .text-wrapper .description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 39px;
+}
+
+.section-beautify .img-wrapper {
+    max-width: 500px;
+    position: relative;
+    margin-right: 68px;
+    z-index: 0;
+}
+
+.section-beautify .img-wrapper::after {
+    content: "";
+    height: 372px;
+    width: 372px;
+    border-radius: 100%;
+    background-color: #09513B;
+    position:absolute;
+    right:-68px;
+    top:calc(50% - 186px);
+    z-index: -1;
+}
+
+@media screen and (max-width:1023px) {
+    .section-beautify .container {
+        flex-direction: column;
+        gap:30px;
+    }
+
+    .section-beautify .img-wrapper {
+        max-width:350px;
+        margin:0 auto;
+    }
+
+    .section-beautify .img-wrapper::after {
+        display: none;
+    }    
+}
+
+/*End Section beautify*/
+
+/*Start  Section-browse*/
+
+.section-browse,
+.section-works {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-works {
+    border-top: 1px solid #D7D6D6;
+}
+
+.section-browse .description,
+.section-works .description {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.section-browse .card-default h4 {
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:767px){
+    .section-works .card-wrapper {
+        flex-direction:column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .section-browse .card-wrapper  {
+        flex-direction: column;
+    }    
+}
+
+/*End Section-browse*/
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.card-default {
+    max-width: 381px;
+    text-align: center;
+}
+
+.card-default .decor-circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#111;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    top:-35px;
+    outline:15px solid #FFFFFF;
+}
+
+.card-default h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.card-default p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;    
+    color: #666666;
+}
+
+/*Start  Section-mailing-list*/
+
+.section-mailing-list {
+    background-color: #F2F5FF;
+    padding: 60px 0;
+}
+
+.section-mailing-list .container .description {
+    max-width: 512px;
+    margin: 10px auto 50px;
+    line-height: 39px;
+}
+
+.section-mailing-list .mail-submit {
+    margin: 0 auto;
+    display:flex;
+    max-width: 470px;
+    background-color: papayawhip;
+    border-radius: 3px;
+    border: 1px solid #054C73;
+    overflow: hidden;
+}
+
+.section-mailing-list .mail-submit input {
+    width: 100%;
+    border: 0;
+    padding-left: 25px;
+    padding-right: 10px;  
+}
+
+.section-mailing-list .mail-submit input::placeholder {
+    color:rgba(1, 28, 66, 0.3);    
+}
+
+.section-mailing-list .mail-submit .btn-default {
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 0;
+    padding: 24px 44px;
+    text-transform: capitalize;    
+}
+
+/* End  Section-mailing-list*/
+
+/*Start  Section-footer*/
+
+.section-footer {
+    background: #03344F;
+    padding-top:50px;
+    padding-bottom: 90px;
+}
+
+.section-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-footer .title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: left;
+    white-space:nowrap;
+}
+
+.section-footer .description {
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;    
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 34px;
+    padding-bottom: 21px;
+}
+
+.section-footer .img-wrapper {
+    display: flex;
+    gap:21px;
+    margin-top: 34px;    
+}
+
+@media screen and (max-width: 767px) {
+    .section-footer .container {
+        flex-direction: column;
+    }
+}
+
+/*End  Section-footer*/
